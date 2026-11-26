@@ -1,0 +1,94 @@
+{
+  "_note": "Your brand. Run /setup-brand in Claude Code to fill this in interactively, or edit by hand. Hex values only.",
+  "name": "Your Name",
+  "colors": {
+    "background": "#0B1120",
+    "surface": "#1E293B",
+    "primary": "#38BDF8",
+    "secondary": "#818CF8",
+    "text": "#FFFFFF",
+    "textMuted": "#94A3B8",
+    "gradient": "linear-gradient(135deg, #38BDF8 0%, #818CF8 100%)",
+    "semantic": {
+      "red": "#EF4444",
+      "green": "#22C55E",
+      "amber": "#F59E0B",
+      "purple": "#A78BFA",
+      "_use": "red=like/subscribe/stop/mistakes, green=money/success, amber=warnings/tips, purple=AI/magic moments. primary stays the default."
+    }
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "headingWeights": {
+      "brand": 700,
+      "headline": 300
+    },
+    "_source": "Google Fonts names, so the composition can load them. headingWeights: brand = wordmark weight, headline = big slide headline weight."
+  },
+  "layout": {
+    "safeMarginPx": 80,
+    "cornerRadiusPx": 14,
+    "faceSafeZones": {
+      "_note": "Where your face sits, as % of frame (x,y = top-left corner). Overlays avoid this box. /setup-brand can measure it from a sample clip.",
+      "full": {
+        "x": 30,
+        "y": 5,
+        "width": 40,
+        "height": 70
+      },
+      "corner": {
+        "x": 76,
+        "y": 70,
+        "width": 24,
+        "height": 30,
+        "_note": "webcam bubble bottom-right in screen tutorials"
+      }
+    }
+  },
+  "motion": {
+    "style": "Subtle and premium. Occasional 1-3 word keyword highlights, soft slide up + fade + light blur-in, quick fade out. Mostly no text on screen. No captions, bounces, spins, or rainbow effects.",
+    "easeIn": "power3.out",
+    "easeOut": "power2.in",
+    "inDurationSec": 0.35,
+    "outDurationSec": 0.25,
+    "minSecondsBetweenOverlays": 8,
+    "maxOverlaysPerMinute": 4,
+    "punchInScale": 1.12,
+    "wordStaggerFallbackSec": 0.12,
+    "maxKineticPerMinute": 2,
+    "maxTextCoveragePct": 15,
+    "maxSlidesPerVideo": 5,
+    "minSecondsBetweenSlides": 45,
+    "lightMaxPerMinute": 1
+  },
+  "cut": {
+    "maxSilenceSeconds": 0.6,
+    "keepPadSeconds": 0.15,
+    "fillerWords": [
+      "um",
+      "uh",
+      "uhm",
+      "umm",
+      "erm",
+      "er",
+      "ah",
+      "hmm"
+    ]
+  },
+  "endCard": {
+    "headline": "Subscribe for more",
+    "subline": null,
+    "_note": "subline null = show channel.handle if set, otherwise nothing."
+  },
+  "stitch": {
+    "transitionSec": 0.3,
+    "_note": "soft crossfade between clips; 0 for hard cuts"
+  },
+  "channel": {
+    "name": "Your Name",
+    "handle": null,
+    "_note": "Wordmark shown on slides and the end card. handle (e.g. \"@yourchannel\") shows on the end card; null hides it."
+  }
+}

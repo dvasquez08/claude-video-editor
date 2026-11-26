@@ -1,0 +1,15 @@
+.env
+input/*
+work/*
+output/*
+!input/.gitkeep
+!work/.gitkeep
+!output/.gitkeep
+!output/stitched/
+output/stitched/*
+!output/stitched/.gitkeep
+node_modules/
+__pycache__/
+
+.DS_Store
+Thumbs.db
